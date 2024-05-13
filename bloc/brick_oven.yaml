@@ -7,7 +7,7 @@ files:
       if: is_basic
     name:
       braces: 2
-      rename_with: name
+      rename_with: singular
       format: snakeCase
       suffix: _bloc
     vars:
@@ -17,7 +17,7 @@ files:
       if: is_basic
     name:
       braces: 2
-      rename_with: name
+      rename_with: singular
       format: snakeCase
       suffix: _event
     vars:
@@ -27,7 +27,7 @@ files:
       if: is_basic
     name:
       braces: 2
-      rename_with: name
+      rename_with: singular
       format: snakeCase
       suffix: _state
     vars:
@@ -39,7 +39,7 @@ files:
       if: is_singular
     name:
       braces: 2
-      rename_with: name
+      rename_with: singular
       format: snakeCase
       suffix: _bloc
     vars:
@@ -51,7 +51,7 @@ files:
       if: is_singular
     name:
       braces: 2
-      rename_with: name
+      rename_with: singular
       format: snakeCase
       suffix: _event
     vars:
@@ -61,7 +61,7 @@ files:
       if: is_singular
     name:
       braces: 2
-      rename_with: name
+      rename_with: singular
       format: snakeCase
       suffix: _state
     vars:
@@ -73,9 +73,9 @@ files:
       if: is_plural
     name:
       braces: 2
-      rename_with: name
+      rename_with: plural
       format: snakeCase
-      suffix: s_bloc
+      suffix: _bloc
     vars:
       _INTERFACE_: interface
       _SINGULAR_: singular
@@ -86,9 +86,9 @@ files:
       if: is_plural
     name:
       braces: 2
-      rename_with: name
+      rename_with: plural
       format: snakeCase
-      suffix: s_event
+      suffix: _event
     vars:
       _PLURAL_: plural
   plural_state.dart:
@@ -96,9 +96,9 @@ files:
       if: is_plural
     name:
       braces: 2
-      rename_with: name
+      rename_with: plural
       format: snakeCase
-      suffix: s_state
+      suffix: _state
     vars:
       _SINGULAR_: singular
       _PLURAL_: plural
