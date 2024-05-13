@@ -3,9 +3,7 @@ import 'package:shared_hook_methods/check_for_dependencies.dart';
 import 'package:shared_hook_methods/fetch_pubspec.dart';
 import 'package:shared_hook_methods/get_project_name.dart';
 import 'package:shared_hook_methods/make_plural.dart';
-import 'package:shared_hook_methods/make_singular.dart';
 import 'package:shared_hook_methods/symbols.dart';
-import 'package:shared_hook_methods/verify_changes.dart';
 
 part 'utils/__get_interface_and_name.dart';
 

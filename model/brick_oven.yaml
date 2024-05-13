@@ -2,59 +2,63 @@ source: oven
 brick_config: brick.yaml
 dirs:
   repo:
-    include_if: is_interface
+    include:
+      if: is_interface
     name:
-      value: interface
-      format: snake
+      rename_with: interface
+      format: snakeCase
 files:
   object.dart:
-    include_if_not: is_interface
+    include:
+      if_not: is_interface
     name:
-      value: singular
-      format: snake
+      rename_with: singular
+      format: snakeCase
     vars:
-      singular: _SINGULAR_
-      copy_with: _COPY_WITH_
+      _SINGULAR_: singular
+      _COPY_WITH_: copy_with
 
   repo/repo.dart:
     name:
-      value: interface
-      format: snake
+      rename_with: interface
+      format: snakeCase
     vars:
-      interface: _INTERFACE_
-      cache: _CACHE_
-      source: _SOURCE_
+      _INTERFACE_: interface
+      _CACHE_: cache
+      _SOURCE_: source
 
   repo/cache.dart:
-    include_if: cache
+    include:
+      if: cache
     name:
-      value: interface
+      rename_with: interface
       prefix: i_
       suffix: _cache
-      format: snake
+      format: snakeCase
     vars:
-      singular: _SINGULAR_
-      plural: _PLURAL_
-      interface: _INTERFACE_
-      project: _PROJECT_
+      _SINGULAR_: singular
+      _PLURAL_: plural
+      _INTERFACE_: interface
+      _PROJECT_: project
 
   repo/source.dart:
-    include_if: source
+    include:
+      if: source
     name:
-      value: interface
+      rename_with: interface
       prefix: i_
       suffix: _source
-      format: snake
+      format: snakeCase
     vars:
-      singular: _SINGULAR_
-      plural: _PLURAL_
-      interface: _INTERFACE_
-      project: _PROJECT_
-      all: _ALL_
-      watch_by_id: _WATCH_BY_ID_
-      by_id: _BY_ID_
-      create: _CREATE_
-      delete: _DELETE_
-      update_many: _UPDATE_MANY_
-      update: _UPDATE_
-      watch_all: _WATCH_ALL_
+      _SINGULAR_: singular
+      _PLURAL_: plural
+      _INTERFACE_: interface
+      _PROJECT_: project
+      _ALL_: all
+      _WATCH_BY_ID_: watch_by_id
+      _BY_ID_: by_id
+      _CREATE_: create
+      _DELETE_: delete
+      _UPDATE_MANY_: update_many
+      _UPDATE_: update
+      _WATCH_ALL_: watch_all

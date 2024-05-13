@@ -3,30 +3,30 @@ brick_config: brick.yaml
 dirs:
   example:
     name:
-      value: name
-      format: snake
+      rename_with: name
+      format: snakeCase
 files:
   example/example_screen.dart:
     name:
-      value: name
-      format: snake
+      rename_with: name
+      format: snakeCase
       suffix: _screen
     vars:
-      name: _NAME_
-      project: _PROJECT_
+      _NAME_: name
+      _PROJECT_: project
   example/components/__description.dart:
     vars:
-      name: _NAME_
+      _NAME_: name
   example/example_view.dart:
     name:
-      value: name
-      format: snake
+      rename_with: name
+      format: snakeCase
       suffix: _view
     vars:
-      name: _NAME_
+      _NAME_: name
   example/example.dart:
     name:
-      value: name
-      format: snake
+      rename_with: name
+      format: snakeCase
     vars:
-      name: _NAME_
+      _NAME_: name

@@ -1,6 +1,6 @@
 cook:
   all:
-    - brick_oven cook all -o .
+    - brick_oven cook all -o . --no-sync
   bloc:
     - brick_oven cook bloc -o .
   model:

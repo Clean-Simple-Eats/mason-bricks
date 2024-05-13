@@ -3,73 +3,79 @@ brick_config: brick.yaml
 dirs:
   interface:
     name:
-      format: snake
+      rename_with: null
+      format: snakeCase
   firebase:
-    include_if: is_firebase
+    include:
+      if: is_firebase
     name:
-      value: interface
-      format: snake
+      rename_with: interface
+      format: snakeCase
   dio:
-    include_if: is_dio
+    include:
+      if: is_dio
     name:
-      value: interface
-      format: snake
+      rename_with: interface
+      format: snakeCase
 
 files:
   interface/cache.dart:
-    include_if: cache
+    include:
+      if: cache
     name:
-      value: interface
-      format: snake
+      rename_with: interface
+      format: snakeCase
       suffix: _cache
     vars:
-      singular: _SINGULAR_
-      plural: _PLURAL_
-      interface: _INTERFACE_
-      project: _PROJECT_
+      _SINGULAR_: singular
+      _PLURAL_: plural
+      _INTERFACE_: interface
+      _PROJECT_: project 
   interface/interface.dart:
     name:
-      value: interface
-      format: snake
+      rename_with: interface
+      format: snakeCase
     vars:
-      interface: _INTERFACE_
+      _INTERFACE_: interface
 
   # DIO
   dio/source.dart:
-    include_if: source
+    include:
+      if: source
     name:
-      value: interface
-      format: snake
+      rename_with: interface
+      format: snakeCase
       suffix: _source
     vars:
-      singular: _SINGULAR_
-      plural: _PLURAL_
-      interface: _INTERFACE_
-      project: _PROJECT_
-      all: _ALL_
-      by_id: _BY_ID_
-      create: _CREATE_
-      delete: _DELETE_
-      update_many: _UPDATE_MANY_
-      update: _UPDATE_
+      _SINGULAR_: singular 
+      _PLURAL_: plural
+      _INTERFACE_: interface
+      _PROJECT_: project 
+      _ALL_: all
+      _BY_ID_: by_id
+      _CREATE_: create
+      _DELETE_: delete
+      _UPDATE_MANY_: update_many
+      _UPDATE_: update
 
   # FIREBASE
   firebase/source.dart:
-    include_if: source
+    include:
+      if: source
     name:
-      value: interface
-      format: snake
+      rename_with: interface
+      format: snakeCase
       suffix: _source
     vars:
-      singular: _SINGULAR_
-      plural: _PLURAL_
-      interface: _INTERFACE_
-      project: _PROJECT_
-      watch_all: _WATCH_ALL_
-      all: _ALL_
-      watch_by_id: _WATCH_BY_ID_
-      by_id: _BY_ID_
-      create: _CREATE_
-      delete: _DELETE_
-      update_many: _UPDATE_MANY_
-      update: _UPDATE_
+      _SINGULAR_: singular 
+      _PLURAL_: plural
+      _INTERFACE_: interface
+      _PROJECT_: project 
+      _WATCH_ALL_: watch_all
+      _ALL_: all
+      _WATCH_BY_ID_: watch_by_id
+      _BY_ID_: by_id
+      _CREATE_: create
+      _DELETE_: delete
+      _UPDATE_MANY_: update_many
+      _UPDATE_: update

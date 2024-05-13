@@ -1,5 +1,9 @@
 bricks:
-  bloc: bloc/brick_oven.yaml
-  model: model/brick_oven.yaml
-  repo: repo/brick_oven.yaml
-  screen: screen/brick_oven.yaml
+  bloc:
+    path: bloc/brick_oven.yaml
+  model:
+    path: model/brick_oven.yaml
+  repo:
+    path: repo/brick_oven.yaml
+  screen:
+    path: screen/brick_oven.yaml
