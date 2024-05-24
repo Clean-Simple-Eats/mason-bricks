@@ -7,11 +7,16 @@ String getProjectName(Pubspec? pubspec, String package) {
     return project;
   }
 
+  if (pubspec.name == package) {
+    return '';
+  }
+
   if (pubspec.name.endsWith(package)) {
     final parts = pubspec.name.split('_');
     parts.removeLast();
 
     project = parts.join('_');
+    project = project + '_';
   }
 
   return project;

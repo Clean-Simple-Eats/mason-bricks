@@ -1,7 +1,7 @@
-import 'package:_PROJECT_SNAKE_domain/domain.dart';
+import 'package:_PROJECT_domain/domain.dart';
 
-import 'package:_PROJECT_SNAKE_data/utils/database.dart';
-import 'package:_PROJECT_SNAKE_data/utils/hive_cache.dart';
+import 'package:_PROJECT_data/utils/database.dart';
+import 'package:_PROJECT_data/utils/hive_cache.dart';
 
 // ignore: strict_raw_type
 class _INTERFACE_PASCALCache extends HiveCache

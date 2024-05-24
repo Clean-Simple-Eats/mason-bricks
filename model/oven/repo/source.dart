@@ -1,5 +1,5 @@
-import 'package:_PROJECT_SNAKE_domain/models/_SINGULAR_SNAKE.dart';
-import 'package:_PROJECT_SNAKE_domain/models/request_result.dart';
+import 'package:_PROJECT_domain/models/_SINGULAR_SNAKE.dart';
+import 'package:_PROJECT_domain/models/request_result.dart';
 
 abstract class I_INTERFACE_PASCALSource {
   const I_INTERFACE_PASCALSource();

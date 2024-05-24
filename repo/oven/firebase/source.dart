@@ -1,9 +1,9 @@
 import 'dart:developer';
 
-import 'package:_PROJECT_SNAKE_data/utils/parsers.dart';
-import 'package:_PROJECT_SNAKE_domain/domain.dart';
+import 'package:_PROJECT_data/utils/parsers.dart';
+import 'package:_PROJECT_domain/domain.dart';
 
-import 'package:_PROJECT_SNAKE_data/utils/firestore.dart';
+import 'package:_PROJECT_data/utils/firestore.dart';
 
 class _INTERFACE_PASCALSource extends Firestore
     implements I_INTERFACE_PASCALSource {

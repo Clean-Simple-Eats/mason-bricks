@@ -30,7 +30,7 @@ files:
       _SINGULAR_: singular
       _PLURAL_: plural
       _INTERFACE_: interface
-      _PROJECT_: project 
+      _PROJECT_: project
   interface/interface.dart:
     name:
       rename_with: interface
@@ -47,10 +47,10 @@ files:
       format: snakeCase
       suffix: _source
     vars:
-      _SINGULAR_: singular 
+      _SINGULAR_: singular
       _PLURAL_: plural
       _INTERFACE_: interface
-      _PROJECT_: project 
+      _PROJECT_: project
       _ALL_: all
       _BY_ID_: by_id
       _CREATE_: create
@@ -67,10 +67,10 @@ files:
       format: snakeCase
       suffix: _source
     vars:
-      _SINGULAR_: singular 
+      _SINGULAR_: singular
       _PLURAL_: plural
       _INTERFACE_: interface
-      _PROJECT_: project 
+      _PROJECT_: project
       _WATCH_ALL_: watch_all
       _ALL_: all
       _WATCH_BY_ID_: watch_by_id

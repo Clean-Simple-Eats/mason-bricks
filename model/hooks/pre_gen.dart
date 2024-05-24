@@ -53,7 +53,7 @@ void run(HookContext context) {
     final keys = methods.keys.toList();
 
     final sourceMethods = context.logger.chooseAny(
-      'Which methods should the source interface contain?',
+      'Which methods should the source interface contains?',
       choices: keys,
       defaultValues: keys,
     );
