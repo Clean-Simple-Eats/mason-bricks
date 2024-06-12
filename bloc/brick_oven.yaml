@@ -13,7 +13,7 @@ files:
     vars:
       _SINGULAR_: singular
   basic_event.dart:
-    include: 
+    include:
       if: is_basic
     name:
       braces: 2
@@ -23,7 +23,7 @@ files:
     vars:
       _SINGULAR_: singular
   basic_state.dart:
-    include: 
+    include:
       if: is_basic
     name:
       braces: 2
@@ -35,7 +35,7 @@ files:
 
   # SINGULAR
   singular_bloc.dart:
-    include: 
+    include:
       if: is_singular
     name:
       braces: 2
@@ -46,8 +46,9 @@ files:
       _INTERFACE_: interface
       _SINGULAR_: singular
       _PROJECT_: project
+      _NAME_: name
   singular_event.dart:
-    include: 
+    include:
       if: is_singular
     name:
       braces: 2
@@ -57,7 +58,7 @@ files:
     vars:
       _SINGULAR_: singular
   singular_state.dart:
-    include: 
+    include:
       if: is_singular
     name:
       braces: 2
@@ -69,7 +70,7 @@ files:
 
   # PLURAL
   plural_bloc.dart:
-    include: 
+    include:
       if: is_plural
     name:
       braces: 2
@@ -82,7 +83,7 @@ files:
       _PLURAL_: plural
       _PROJECT_: project
   plural_event.dart:
-    include: 
+    include:
       if: is_plural
     name:
       braces: 2
@@ -92,7 +93,7 @@ files:
     vars:
       _PLURAL_: plural
   plural_state.dart:
-    include: 
+    include:
       if: is_plural
     name:
       braces: 2

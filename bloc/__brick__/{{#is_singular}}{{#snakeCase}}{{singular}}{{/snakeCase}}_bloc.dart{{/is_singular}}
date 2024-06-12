@@ -174,7 +174,7 @@ class {{#pascalCase}}{{{singular}}}{{/pascalCase}}Bloc
 
     _listener = stream.listen((event) {
       if (event.wasDeleted) {
-        add(const _SourceChanged(_Error('_NAME_SENTENCE was deleted')));
+        add(const _SourceChanged(_Error('{{#sentenceCase}}{{{name}}}{{/sentenceCase}} was deleted')));
         return;
       }
 
