@@ -5,10 +5,10 @@ packages:
     dependency: transitive
     description:
       name: archive
-      sha256: cb6a278ef2dbb298455e1a713bda08524a175630ec643a242c399c932a0a1f7d
+      sha256: "7dcbd0f87fe5f61cb28da39a1a8b70dbc106e2fe0516f7836eb7bb2948481a12"
       url: "https://pub.dev"
     source: hosted
-    version: "3.6.1"
+    version: "4.0.5"
   async:
     dependency: transitive
     description:
@@ -93,10 +93,10 @@ packages:
     dependency: "direct main"
     description:
       name: mason
-      sha256: "1871650cbb3e7df28eb31d7a1682466f7a368cb676a5e335d1898cf3efbfad47"
+      sha256: de5681849fd49bb4f53f703f439b1d9dac64ff472e49b5dfb23ad5d837185780
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.0-dev.60"
+    version: "0.1.1"
   mason_logger:
     dependency: transitive
     description:
@@ -137,6 +137,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.5.1"
+  posix:
+    dependency: transitive
+    description:
+      name: posix
+      sha256: a0117dc2167805aa9125b82eee515cc891819bac2f538c83646d355b16f58b9a
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.0.1"
   pub_semver:
     dependency: transitive
     description:

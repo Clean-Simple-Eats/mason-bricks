@@ -5,6 +5,6 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  mason: ^0.1.0-dev.60
+  mason: ^0.1.1
   shared_hook_methods:
     path: ../../shared_hook_methods
